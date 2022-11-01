@@ -1,0 +1,194 @@
+.modal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.pop-up {
+    z-index: 5;
+    width: 60%;
+    /* height: 350px;  */
+    min-width: 850px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding: 24px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.btn-close {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    background: url(http://localhost:8080/img/ic_sprites.2cee3502.svg) no-repeat -907px -656px;
+	width: 13px;
+	height: 13px;
+}
+
+.btn-close:hover {
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.form__left {
+    position: relative;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #cecece;
+}
+
+/* .form__left::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 5%;
+    height: 90%;
+    border-left: 1px solid #cecece;
+} */
+
+.form__avatar {
+   position: relative;
+   width: 180px;
+}
+
+.form__avatar--image {
+    background-image: url('../../assets/Icons/ic_Avatar_36.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #ccc;
+    height: 150px;
+    margin: 0 24px;
+}
+
+.form__avatar--btn {
+    position: absolute;
+    bottom: -28px;
+    height: 28px;
+    width: calc(100% - 48px);
+    right: 24px;
+    outline: none;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #fff;
+    background-color: #03ae66;
+}
+
+.form__info {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.info--fullname {
+
+}
+
+.info--code {
+
+}
+
+.form__right {
+    padding: 0 24px;
+    width: calc(100% - 180px);
+    box-sizing: border-box;
+}
+
+.form__header {
+    color: #4d4f5c;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.form__body {
+    width: 100%;
+}
+
+.double__input {
+    display: flex;
+}
+
+.box__input {
+    display: flex;
+    margin-bottom: 16px;
+
+    /* align-items: center; */
+}
+
+.box__input--left {
+    width: 45%;
+}
+
+.box__input--right {
+    width: 55%;
+    padding-left: 20px;
+}
+
+.box__input--full {
+    width: 100%;
+}
+
+.lable__input {
+    width: 105px;
+    min-width: 105px;
+    color: #7c7c7c;
+    line-height: 32px;
+
+    /* color: #b1b1b1; */
+}
+
+.input__form1 {
+    width: 100% !important;
+}
+
+.input__form {
+    width: calc(100% - 105px) !important;
+}
+
+.form__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 24px;
+}
+
+.box__check {
+    display: flex;
+    align-items: center;
+
+}
+
+.check__train {
+
+}
+
+.check__work {
+
+}
+
+.check__off {
+    display: flex;
+    width: 40%;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.check__off--title {
+    width: 130px;
+    padding-right: 10px;
+}
+
+.errors {
+    border-color: red !important;
+}

@@ -1,26 +1,67 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="header-app">
+    <TheMenu/> 
+    <div id="main" :class="{ 'explore-menu' : isExplore}">
+      <TheHeader/>
+      <TheContent/>
+    </div>
+    
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheContent from './components/layout/TheContent.vue';
+import TheHeader from './components/layout/TheHeader.vue';
+import TheMenu from './components/layout/TheMenu.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    TheMenu,
+    TheHeader,
+    TheContent
+},
+  data() {
+    return {
+      isExplore: false
+    }
+  },
+
+  methods: {
+    exploreMenu() {
+      this.isExplore = !this.isExplore;
+    }
+  },
 }
 </script>
 
 <style>
+@import url('./style/layout/main.css');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    font-family: MISA;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* width: 100%;
+  height: 100%; */
+  box-sizing: border-box;
+}
+
+#header-app {
+  display: flex;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.explore-menu {
+  width: calc(100% - 150px) !important;
 }
 </style>

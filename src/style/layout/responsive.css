@@ -1,0 +1,7 @@
+@media only screen and (max-width: 1370px) {
+    #header, #cadres-list {
+      width: calc(100% - 50px) !important;
+    }
+}
+
+

@@ -1,0 +1,102 @@
+@import url('../layout/responsive.css');
+#header {
+    padding: 6px 16px;
+    height: 53px;
+    box-shadow: 1px 3px rgba(172, 177, 177, 0.05);
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header__left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+.header__left--title {
+    font-size: 16px;
+    font-family: url('../../assets/Fonts/OpenSans-SemiBold.woff');
+}
+
+.header__left--notifi {
+    background: url('../../assets/Icons/ic_sprites.svg') no-repeat -801px -433px;
+	width: 13px;
+	height: 13px;
+    margin-left: 5px;
+}
+
+.header_centre {
+    width: calc(100% - 400px);
+}
+
+.header_right {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.header__icons {
+    position: relative;
+}
+
+.header__icons::before {
+    content: '';
+    position: absolute;
+    height: 24px;
+    border-right: 1px solid #ccc;    
+    top: 8px;
+    right: -5px;
+}
+
+.icon--notifi {
+    position: relative;
+    background: url('../../assets/Icons/ic_Notification_32.png') no-repeat center center;
+    width: 41px;
+    height: 41px;
+}
+
+.icon--notifi::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    border: 4px solid rgb(240, 63, 63);
+    border-radius: 50%;
+    top: 11px;
+    right: 9px;
+}
+
+.show__tooltip {
+    display: none;
+}
+
+.icon--notifi:hover .show__tooltip {
+    display: block;
+}
+
+.header__role {
+    margin-left: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.role__title {
+
+}
+
+.role__arrow {
+    background: url('../../assets/Icons/ic_sprites.svg') no-repeat -185px -165px;
+	width: 11px;
+	height: 7px;
+    margin-left: 14px;
+}
+
+.header__avatar {
+    background: url('../../assets/Icons/ic_sprites.svg') no-repeat -488px -67px;
+	width: 39px;
+	height: 38px;
+    margin-left: 10px;
+}
+

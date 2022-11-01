@@ -1,0 +1,66 @@
+#cadres-list {
+    padding: 12px;
+    height: calc(100vh - 53px);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.toolbar {
+    display: flex;
+    width: 100%;
+}
+
+.toolbar__left {
+    min-width: 260px;
+}
+
+.toolbar__centre {
+    width: calc(100% - 520px);
+}
+
+.toolbar__right {
+    width: 260px;
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse
+}
+
+#no-data {
+    padding: 12px;
+    height: calc(100vh - 53px);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.nodata__icon {
+    background-image: url('../../assets/Icons/ic_Alert.png');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center bottom;
+    width: 100%;
+    height: 50%;
+}
+
+.nodata__message, .nodata__btn {
+    padding-top: 34px;
+    width: 100%;
+    text-align: center;
+}
+
+.message__header {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.message__body {
+    
+}
+
+.nodata__btn {
+   
+}
+
+.btn__icon:hover .show__tooltip {
+    display: block;
+}

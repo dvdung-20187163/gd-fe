@@ -1,0 +1,104 @@
+@import url('../layout/main.css');
+.btn {
+    height: 32px;
+    min-width: 96px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 8px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 13px;
+    font-family: MISA-SemiBold;
+    border: none;
+}
+
+.btn__main {
+    color: #fff;
+    background-color: #03ae66;
+}
+
+.btn__main:hover, .btn__main:focus{
+    background-color: #02bf70;
+    cursor: pointer;
+}
+
+.btn__main:disabled {
+    background-color: #e0e0e0;
+    color: #a6a6a6;
+    cursor: not-allowed
+}
+
+.btn__sub {
+    color: #3d3f4e;
+    background-color: #fff;
+    border: 1px solid #cecece;
+}
+
+.btn__sub:hover, .btn__sub:focus {
+    background: #eaecef;
+    cursor: pointer;
+}
+
+.btn__sub:disabled {
+    background-color: #fff;
+    color: #a6a6a6;
+    cursor: not-allowed;
+}
+
+/* btn icon */
+
+.btn__icon {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    height: 32px;
+    width: 32px;
+    margin-left: 8px;
+    border: none;
+}
+
+.btn__icon:hover, .btn__icon:focus {
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.icon--three-point {
+    background: url('../../assets/Icons/ic_sprites.svg') no-repeat -628px -973px;
+}
+
+.btn__paging {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border: none;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 4px;
+
+}
+
+.btn__paging:hover {
+    border: 1px solid #e0e0e0;
+    background-color: #e5f3ff;
+    cursor: pointer;
+}
+
+.delete__multi {
+    top: 43px;
+    right: 5px;
+    height: 40px;
+    width: 100px;
+    z-index: 10;
+    background-image: url('../../assets/Icons/ic_delete.png');
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 16px;
+    border: 1px solid #cecece;
+    box-shadow: 0 0 10px #d5d5d5;
+}
+
+.btn__tab {
+    margin-left: -16px;
+    opacity: 0;
+}

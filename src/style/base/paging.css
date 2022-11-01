@@ -1,0 +1,47 @@
+.paging {
+    /* position: absolute; */
+    bottom: 0;
+    right: 12px;
+    left: 12px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 6px grey
+}
+
+.page__number {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    line-height: 52px;
+}
+
+.number__first {
+    background: url('../../assets/Icons/ic_MoveToFirst.png') no-repeat center center;
+}
+
+.number__previous {
+    background: url('../../assets/Icons/ic_Back.png') no-repeat center center;
+}
+
+.number__next {
+    background: url('../../assets/Icons/ic_Next.png') no-repeat center center;
+}
+
+.number__last {
+    background: url('../../assets/Icons/ic_MoveToLast.png') no-repeat center center;
+}
+
+.paging__info {
+    display: flex;
+}
+
+.totalCount {
+    margin-right: 20px;
+    margin-left: 6px;
+}
+
+.btn__paging:hover .show__tooltip {
+    display: block;
+    top: -85px;
+}

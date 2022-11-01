@@ -1,0 +1,83 @@
+#menu {
+    background-color: #24344b;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.menu__header {
+    display: flex;
+    cursor: pointer;
+    height: 53px;
+}
+
+.menu__header--title {
+    width: 150px;
+    height: 50px;
+    background: url(../../assets/Icons/ThietBi_New56x56\ –\ 4.svg) 13px center / 35px no-repeat rgb(36, 52, 75);
+    font-weight: 600;
+    font-size: 16px;
+    color: #f3f4f6;
+    bottom: 2px;
+    padding-left: 58px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 50px;
+    box-sizing: border-box;
+
+}
+
+.menu__header--button {
+    background: #24344b url(../../assets/Icons/ic_sprites.svg) no-repeat 0 0;
+    width: 50px;
+}
+
+.menu__main {
+    padding-top: 12px;
+}
+
+.menu__list {
+
+}
+
+.menu__item {
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 6px;
+    padding-left: 4px;
+    color: #c8c8c8;
+
+    /* border-left: 4px solid #24344b; */
+}
+
+.menu__item:hover {
+    background-color: #404f64;
+}
+
+.menu__item--icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 46px;
+    height: 40px;
+}
+
+.menu__item--title {
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    width: 150px;
+}
+
+.show__tooltip {
+    display: none;
+}
+
+.menu__item:hover .show__tooltip {
+    display: block;
+}
+
+.menu__header--button:hover .show__tooltip {
+    display: block;
+}

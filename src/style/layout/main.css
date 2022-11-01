@@ -1,0 +1,21 @@
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: MISA;
+    src: url('../../assets/Fonts/OpenSans-Regular.woff');
+}
+
+@font-face {
+    font-family: MISA Bold;
+    src: url('../../assets/Fonts/OpenSans-Bold.woff');
+}
+
+@font-face {
+    font-family: MISA-SemiBold;
+    src: url('../../assets/Fonts/OpenSans-SemiBold.woff');
+}

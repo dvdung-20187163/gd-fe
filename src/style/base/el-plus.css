@@ -1,0 +1,90 @@
+.el-select-group__title {
+  font-size: 13px !important;
+  background-image: url("../../assets/Icons/ic_Checkbox_Inactive.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position-x: 10px !important;
+  padding-left: 54px !important;
+}
+
+.el-select-dropdown__item.selected {
+  font-size: 13px !important;
+  font-weight: bold !important;
+  color: #03ae66 !important;
+}
+
+.el-select-dropdown__item {
+  font-size: 13px !important;
+}
+
+.el-select-dropdown__item:hover {
+  background-color: #e5f3ff !important;
+}
+
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  background-color: #e5f3ff !important;
+}
+.el-icon.clear-icon {
+  display: none !important;
+}
+
+.col.last-col-third .el-input__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.el-input__wrapper {
+  padding: 5px 10px;
+  /* width: 147px !important; */
+}
+
+.el-input__wrapper.is-focus {
+  box-shadow: 0 0 0 1px #03ae66 inset !important;
+}
+.el-select .el-input__wrapper.is-focus {
+  box-shadow: 0 0 0 1px #03ae66 inset !important;
+}
+
+.el-select .el-input.is-focus .el-input__wrapper {
+  box-shadow: 0 0 0 1px #03ae66 inset !important;
+}
+
+.el-select:hover:not(.el-select--disabled) .el-input__wrapper {
+  box-shadow: 0 0 0 1px #03ae66 inset !important;
+}
+
+.el-input__prefix {
+  position: absolute;
+  right: 0;
+}
+
+.el-icon.el-input__icon {
+  font-size: 16px;
+}
+
+.el-select {
+  width: 100% !important;
+}
+
+.el-input.el-input--suffix {
+  height: 32px !important;
+}
+
+.el-input__inner {
+  font-size: 13px !important;
+  color: #000 !important;
+}
+
+.input::placeholder {
+  font-size: 13px !important;
+  color: #b1b1b1 !important;
+}
+
+.el-input__inner::placeholder {
+  font-size: 13px !important;
+  color: #b1b1b1 !important;
+}
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected::after {
+  display: none;
+}
