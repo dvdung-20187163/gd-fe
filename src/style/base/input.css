@@ -3,7 +3,7 @@
     height: 32px;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
-    padding: 6px 32px 6px 16px;
+    padding: 6px 6px 6px 10px;
     outline: none;
     box-sizing: border-box;
 }
@@ -60,6 +60,7 @@
     box-sizing: border-box;
     text-align: center;
     margin: 0 8px;
+    outline: none;
 }
 
 .page__current:hover {
@@ -123,14 +124,29 @@
   .container input:checked ~ .checkmark:after {
     display: block;
   }
-  
-  /* Style the checkmark/indicator */
-  .container .checkmark:after {
-    left: 5px;
-    top: 1.5px;
-    width: 4px;
-    height: 9px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
+
+  .container input:focus {
+    border: 1px solid #03ae66;
   }
+  
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 5px;
+  top: 1.5px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Ẩn icon tăng giảm của input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

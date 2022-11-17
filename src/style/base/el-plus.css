@@ -74,6 +74,7 @@
 .el-input__inner {
   font-size: 13px !important;
   color: #000 !important;
+  padding-left: 2px !important;
 }
 
 .input::placeholder {

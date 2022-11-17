@@ -13,8 +13,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -80%);
-    min-width: 350px;
-    max-width: 400px;
+    min-width: 310px;
+    max-width: 310px;
     border-radius: 4px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
     padding: 24px;
@@ -26,6 +26,8 @@
     font-weight: 700;
     font-size: 20px;
     padding-bottom: 24px;
+    color: #4d4f5c;
+
 }
 
 .dialog__main {

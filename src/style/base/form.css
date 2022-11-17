@@ -166,7 +166,17 @@
 .box__check {
     display: flex;
     align-items: center;
+    height: 32px;
+}
 
+.w-175 {
+    max-width: 175px;
+    min-width: 175px;
+}
+
+.w-130 {
+    max-width: 130px;
+    min-width: 130px;
 }
 
 .check__train {
@@ -178,8 +188,13 @@
 }
 
 .check__off {
+    min-width: 40%;
+    
+}
+
+.from__check-off {
     display: flex;
-    width: 40%;
+
     flex-direction: row-reverse;
     align-items: center;
 }
@@ -191,4 +206,8 @@
 
 .errors {
     border-color: red !important;
+}
+
+.margin-input-form {
+    margin: -39px 132px !important;
 }

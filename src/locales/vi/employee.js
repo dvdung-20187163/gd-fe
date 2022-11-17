@@ -90,12 +90,12 @@ export default {
     Dialog: {
         Header: "Thông báo",
         Close: "Đóng",
-        ContentDeleteOne: "Bạn có chắc chắn muốn xóa cán bộ ",
+        ContentDeleteOne: "Bạn có chắc chắn muốn xóa Cán bộ giáo viên đang được chọn không",
         ContentDeleteTwo: " không?",
         ContentDeleteMultiple: "Bạn có chắc chắn muốn xóa những cán bộ đã được chọn không?",
         ContentUpdateOne: "Dữ liệu của cán bộ ",
         ContentUpdateTwo: " đã bị thay đổi, bạn có muốn lưu lại không?",
-        ContentAdd: "Bạn đã nhập dữ liệu, bạn có muốn thêm mới thông tin không?",
+        ContentAdd: "Bạn đã nhập dữ liệu, bạn có muốn thêm mới thông tin không?", 
     },
     Toast: {
         Success: "Thành công",
@@ -114,7 +114,6 @@ export default {
         FullNameRequired: "Họ và tên không được để trống.",
         PhoneNumberRequired: "Số điện thoại chưa đúng định dạng.",
         EmailRequired: "Email chưa đúng định dạng.",
-        ApiError: "API đang lỗi, hãy thử lại sau!", 
     },
     Loading: {
         ContentLoading: "Đang tải",
@@ -140,10 +139,35 @@ export default {
         Info: 0,
         Add: 1,
         Edit: 2,
-        Delete: 3,
+        DeleteOne: 3,
+        DeleteMultiple: 4,
+    },
+    Enum: {
+        KeyCode: {
+            TAB: 9,
+            ENTER: 13,
+            CTRL: 17,
+            ESC: 27,
+            ArrowDown: 40,
+            INSERT: 45,
+            DELETE: 46,
+            C: 83,
+            F2: 113,
+            F3: 114,
+            S: 83,
+            MINUS: 189,
+            F8: 119,
+            F9: 120,  
+        },
     },
     noData: {
         header: "Chưa có lớp học",
         body: "Vui lòng chọn Thêm mới lớp học hoặc thêm nhanh để thêm lớp hàng loạt"
+    },
+    StatusBackend: {
+        Status400: "Dữ liệu đầu vào ko hợp lệ",
+        Status404: "Phương thức yêu cầu của bạn không hợp lệ hoặc không được cho phép tại server",
+        Status500: "Lỗi phía Serve",
+        DefaultError: "Vui lòng liên hệ Misa"
     }
 }

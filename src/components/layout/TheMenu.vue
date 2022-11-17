@@ -82,7 +82,7 @@ export default {
 
     created() {
         this.localesEmployee = localesEmployeeVi
-        console.log(this.localesEmployee)
+        // console.log(this.localesEmployee)
     },
 
     mounted() {

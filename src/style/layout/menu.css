@@ -1,6 +1,6 @@
 #menu {
     background-color: #24344b;
-    width: 200px;
+    width: 220px;
     box-sizing: border-box;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .menu__header--title {
-    width: 150px;
+    width: 174px;
     height: 50px;
     background: url(../../assets/Icons/ThietBi_New56x56\ –\ 4.svg) 13px center / 35px no-repeat rgb(36, 52, 75);
     font-weight: 600;
@@ -29,11 +29,11 @@
 
 .menu__header--button {
     background: #24344b url(../../assets/Icons/ic_sprites.svg) no-repeat 0 0;
-    width: 50px;
+    width: 46px;
 }
 
 .menu__main {
-    padding-top: 12px;
+    padding-top: 6px;
 }
 
 .menu__list {

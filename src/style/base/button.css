@@ -65,6 +65,7 @@
 
 .icon--three-point {
     background: url('../../assets/Icons/ic_sprites.svg') no-repeat -628px -973px;
+    border: 1px solid #cecece;
 }
 
 .btn__paging {
